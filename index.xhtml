@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Auteur : Nabil -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>The Library</title>
+    <script type="text/javascript" src="Code/JavaScript/script.js" charset="utf-8"></script> <!-- Lien vers le fichier de script  -->
+    <link rel="stylesheet" type="text/css" href="Styles/index.css" /> <!-- lien vers le css dédié a l'index.html -->
+    <link id="alt-sheet" rel="stylesheet" type="text/css" href="Styles/colorblind.css" disabled="disabled" /> <!-- version colorblind de notre css -->
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&amp;family=UnifrakturMaguntia&amp;family=Crimson+Text:wght@400;700&amp;display=swap" rel="stylesheet" /> <!-- import d'une bibliothèque de font google pout la police d'écriture -->
+</head>
+
+
+<body onload="displayHour()"> <!-- Appelle la fonction displayHour au chargement de la page  -->
+
+<div id="header"> <!-- entête présente sur l'intégralité du site  -->
+    <a href="Content/info.xhtml"><img class="image" src="Images/forms.png" alt="Forms icon" /></a>
+    <img src="Images/random.png" alt="random logo" onclick="random_file()" />
+    <img class="image" src="Images/colorblind.png" alt="Colorblind mode" onclick="colorblind_switch()" />
+</div>
+
+<h1>Welcome to the Library</h1> <!-- Titre principal  -->
+
+<div id="corps"> <!-- reste du code sans l'entête dit 'corps' -->
+    <div id="nabil"> <!-- Profil de  Nabil aussi lien de redirection vers sa bibliothèque -->
+        <a href="Content/nabil.xhtml"><img alt="Photo of Nabil" src="Images/pp_nabil.jpg" /></a>
+        <h3>Nabil's Library</h3>
+    </div>
+
+    <div id="enzo"> <!-- Profil d'Enzo aussi lien de redirection vers sa bibliothèque -->
+        <a href="Content/enzo.xhtml"><img alt="Photo of Enzo" src="Images/pp_enzo.jpg" /></a>
+        <h3>Enzo's Library</h3>
+    </div>
+
+
+</div>
+<input id="date" type="text" value="" size="30"/><br/> <!-- date -->
+<button id="mail" onclick="window.location.href='mailto:enzomouzin@gmail.com'">
+    Envoyer un mail
+</button>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body {
+    filter: grayscale(100%);
+    background-color: white
+}
+
+
+
+img {
+    filter: grayscale(100%);
+}

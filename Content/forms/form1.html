@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>Révisions XHTML</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="../../Code/JavaScript/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../Code/JavaScript/test.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="../../Styles/formenzo.css" />
+    <link id="alt-sheet" rel="stylesheet" type="text/css" href="../../Styles/colorblind.css" disabled="disabled" />
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&amp;family=UnifrakturMaguntia&amp;family=Crimson+Text:wght@400;700&amp;display=swap" rel="stylesheet" />
+</head>
+
+<body onload="initReadOnlyTextInput()">
+<div id="header">
+    <a href="../info.xhtml"><img class="image" src="../../Images/forms.png" alt="" /></a>
+    <a href="../../index.xhtml"><img src="../../Images/logo.png" alt="logo" /></a>
+    <img class="image" src="../../Images/colorblind.png" alt="colorblind" onclick="colorblind_switch()" />
+</div>
+
+<h1>Nabil's Form</h1>
+<form id="questionnaire" method="post" action="form1.xhtml">
+    <div>
+        <fieldset>
+            <legend><strong>1. VOTRE IDENTITEE</strong></legend>
+            <p>
+                <label>nom</label>
+                <input id="nom" type="text" value="Votre nom" maxlength="30" size="20" />
+            </p>
+            <p>
+                <label>prénom</label>
+                <input id="prenom" type="text" value="Votre prénom" maxlength="30" size="20" />
+            </p>
+            <p>
+                <label>Heure de connexion à la page </label>
+                <input id="Date" type="text" size="40" readonly="readonly" />
+            </p>
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend><strong>2. CONNAISSANCE DES LIVRES</strong></legend>
+            <ul>
+                <li>
+                    <span>Quel auteur a écrit "The Final Empire" ?</span>
+                    <ul>
+                        <li><input type="radio" name="books" id="choix1" value="GGM" />
+                            <label for="choix1">George R.R. Martin</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="books" id="choix2" value="BS" />
+                            <label for="choix2">Brandon Sanderson</label>
+                        </li>
+                        <li><input type="radio" name="books" id="choix3" value="JA" />
+                            <label for="choix3">Joe Abercrombie</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="books" id="choix4" value="SK" />
+                            <label for="choix4">Stephen King</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="books" id="choix5" value="PB" />
+                            <label for="choix5">Pierce Brown</label>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span>Quel livre a reçu la note 9,5/10 dans ma collection ?</span>
+                    <ul>
+                        <li>
+                            <input type="radio" name="books2" id="choix6" value="S&amp;D" />
+                            <label for="choix6">La première loi, sentiments et déraison</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="books2" id="choix8" value="mistborn" />
+                            <label for="choix8">Mistborn, l'Empire Ultime</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="books2" id="choix9" value="RR" />
+                            <label for="choix9">Red Rising</label>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span>Combien de pages compte "La Première Loi - Tome 3" ?</span>
+                    <ul>
+                        <li>
+                            <input type="radio" name="books3" id="choix10" value="541" />
+                            <label for="choix10">541</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="books3" id="choix11" value="576" />
+                            <label for="choix11">576</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="books3" id="choix12" value="624" />
+                            <label for="choix12">624</label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend><strong>3. VOTRE AVIS :</strong></legend>
+            <ul>
+                <li>
+                    <label for="oeuvre">Quelle œuvre vous intéresse le plus ? :</label>
+                    <select id="oeuvre">
+                        <option>Choisir</option>
+                        <option>Mistborn, The Final Empire</option>
+                        <option>Red Rising</option>
+                        <option>La première Loi, tome 1</option>
+                        <option>Fire &amp; Blood</option>
+                        <option>La première Loi, tome 2</option>
+                        <option>La première Loi, tome 3</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+    </div>
+
+    <fieldset>
+        <legend>Gestion du formulaire</legend>
+        <div>
+            <button type="reset">Effacer</button>
+            <button type="button" onclick="applyAllTests()">Vérifier</button>
+            <button type="button">Afficher les résultats</button>
+            <button type="button" onclick="mysubmit()">Envoyer</button>
+        </div>
+    </fieldset>
+</form>
+
+<hr />
+</body>
+</html>

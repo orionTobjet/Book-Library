@@ -1,0 +1,43 @@
+#header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+#header img{
+    width :100px;
+    height:90px;
+
+}
+
+
+
+body {
+    background-color: rgb(214, 174, 132);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#questionnaire {
+    background-color: rgb(188, 144, 96);
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0,0,0,2);
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e3cdae;
+    border-radius: 10px;
+
+
+}

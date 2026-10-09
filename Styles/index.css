@@ -1,0 +1,80 @@
+body{ /* Attributs CSS appliqués à toute la page web */
+    background-color: rgb(214, 174, 132); /* Couleur de fond bois clair */
+    display: flex; /* Active le mode Flexbox */
+    flex-direction:column; /* Organise les éléments en colonne */
+}
+
+h1, h3{ /* Applique les styles à tous les titres h1 et h3 */
+    text-align: center; /* Centrage horizontal du texte */
+    font-family: 'UnifrakturMaguntia', cursive; /* Police stylisée médiévale */
+    letter-spacing: 1px; /* Espacement supplémentaire entre les lettres */
+}
+
+/* Conteneur principal de l'en-tête */
+#header{
+    display: flex; /* Active Flexbox pour le positionnement */
+    justify-content: space-between; /* Espacement maximal entre les éléments */
+}
+
+/* Style des images dans l'en-tête */
+#header img{
+    width :100px;
+    height:90px;
+}
+
+/* Conteneur principal du corps de page */
+#corps{
+    display: flex ; /* Active Flexbox */
+    flex-direction: row; /* Alignement horizontal des éléments */
+    justify-content: center; /* Centrage horizontal du contenu */
+}
+
+/* Styles communs aux cartes de présentation */
+#nabil , #enzo, #info, #form_enz , #form_nab{
+    display: flex; /* Active Flexbox */
+    flex-direction: column;
+    align-items: center; /* Centrage horizontal du contenu */
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 10px; /* Coins arrondis */
+    width: 250px;
+    height: 315px;
+    background-color: antiquewhite; /* Couleur de fond crème */
+    box-shadow: rgb(0, 0, 0) 0 0 10px; /* Ombre portée */
+}
+
+/* Style des images dans les cartes */
+#nabil img, #enzo img{
+    margin-top: 25px ;
+    margin-bottom: 35px; /* Marge basse sous l'image */
+    width: 100px; /* Taille carrée */
+    height: 100px; /* Taille carrée */
+    border-radius: 100%; /* Rend l'image circulaire */
+}
+
+/* Effet hover sur les images */
+.image:hover{
+    transform: scale(1.1); /* léger  zoom au survol */
+}
+
+/* Conteneur de la date */
+#date{
+    margin-top: 100px;
+    margin-left: 70%;
+    background-color: rgb(214, 174, 132); /* Fond de la même couleur que le body */
+    border: 0  rgb(214, 174, 132); /* Suppression de la bordure */
+    font-family:  cursive; /* Police stylisée */
+}
+
+#mail {
+    width: 20% ;
+    padding: 15px 30px;
+    margin-left: 80%;
+
+    background-color:rgb(165, 121, 67);
+    color: rgb(252, 208, 142);
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}

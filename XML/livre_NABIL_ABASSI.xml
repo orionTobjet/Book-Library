@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bibliotheque SYSTEM "bibliotheque.dtd">
+
+
+
+<Library>
+    <Book state="Lu">
+        <informations>
+            <Title>La Première Loi</Title>
+            <Author>Joe Abercrombie</Author>
+            <Category>Fantasy</Category>
+            <Publisher>Bragelonne</Publisher>
+            <Publishdate>2007</Publishdate>
+            <page_length>621</page_length>
+        </informations>
+        <commentaire>Un récit sombre et captivant avec des personnages mémorables.</commentaire>
+        <note>8</note>
+    </Book>
+    <Book state="Lu">
+        <informations>
+            <Title>La Première Loi - Tome 2: Avant qu'ils soient pendus</Title>
+            <Author>Joe Abercrombie</Author>
+            <Category>Fantasy</Category>
+            <Publisher>Bragelonne</Publisher>
+            <Publishdate>2008</Publishdate>
+            <page_length>576</page_length>
+        </informations>
+        <commentaire>Une suite captivante avec des retournements inattendus.</commentaire>
+        <note>9,5</note>
+    </Book>
+    <Book state="encours">
+        <informations>
+            <Title>La Première Loi - Tome 3: Le Dernier Argument des rois</Title>
+            <Author>Joe Abercrombie</Author>
+            <Category>Fantasy</Category>
+            <Publisher>Wrgb@Home</Publisher>
+            <Publishdate>2008</Publishdate>
+            <page_length>624</page_length>
+        </informations>
+        <commentaire>Une conclusion épique et satisfaisante à la trilogie.</commentaire>
+        <note>9</note>
+    </Book>
+    <Book state="Lu">
+        <informations>
+            <Title>Contes de fées</Title>
+            <Author>Stephen King</Author>
+            <Category>Fantasy</Category>
+            <Publisher>Albin Michel</Publisher>
+            <Publishdate>2021</Publishdate>
+            <page_length>608</page_length>
+        </informations>
+        <commentaire>Un récit enchanteur et sombre qui revisite les contes classiques.</commentaire>
+        <note>8.5</note>
+    </Book>
+    <Book state="Lu">
+        <informations>
+            <Title>The Final Empire</Title>
+            <Author>Brandon Sanderson</Author>
+            <Category>Fantasy</Category>
+            <Publisher>Tor Books</Publisher>
+            <Publishdate>2006</Publishdate>
+            <page_length>541</page_length>
+        </informations>
+        <commentaire>Un début captivant pour la trilogie de Mistborn, avec une magie unique.</commentaire>
+        <note>9</note>
+    </Book>
+    <Book state="Plu">
+        <informations>
+            <Title>Fire and Blood</Title>
+            <Author>George R.R. Martin</Author>
+            <Category>Fantasy</Category>
+            <Publisher>Bantam Books</Publisher>
+            <Publishdate>2018</Publishdate>
+            <page_length>736</page_length>
+        </informations>
+        <commentaire>Une plongée fascinante dans l'histoire des Targaryen.</commentaire>
+        <note>8</note>
+    </Book>
+</Library>

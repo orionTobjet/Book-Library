@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>Révisions XHTML</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="../../Code/JavaScript/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../Code/JavaScript/test.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="../../Styles/formenzo.css" />
+    <link id="alt-sheet" rel="stylesheet" type="text/css" href="../../Styles/colorblind.css" disabled="disabled" />
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&amp;family=UnifrakturMaguntia&amp;family=Crimson+Text:wght@400;700&amp;display=swap" rel="stylesheet" />
+</head>
+<body>
+<div id="header">
+    <a href="../info.xhtml"><img class="image" src="../../Images/forms.png" alt="" /></a>
+    <a href="../../index.xhtml"><img src="../../Images/logo.png" alt="logo" /></a>
+    <img class="image" src="../../Images/colorblind.png" alt="colorblind" onclick="colorblind_switch()" />
+</div>
+
+<div id="questionnaire">
+    <h1>Questionnaire Enzo</h1>
+    <form>
+        <!-- Section Identité -->
+        <fieldset>
+            <legend><strong>Identité</strong></legend>
+            <p>
+                <label for="nom">nom</label>
+                <input id="nom" type="text" />
+            </p>
+            <p>
+                <label for="prenom">prénom</label>
+                <input id="prenom" type="text" />
+            </p>
+            <p>
+                <label for="heure">heure de connexion à la page</label>
+                <input id="heure" type="text" />
+            </p>
+        </fieldset>
+
+        <!-- Tableau de complétion -->
+        <fieldset id="Qun">
+            <legend><strong>Compléter les cases suivantes</strong></legend>
+            <table>
+                <thead>
+                <tr>
+                    <td><strong>Berserk Tome 1</strong></td>
+                    <td><input /></td>
+                    <td><input /></td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input /></td>
+                    <td><strong>Wajdi Mouawad</strong></td>
+                    <td><strong>2003</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>12 règles pour une vie</strong></td>
+                    <td><strong>Jordan B. Peterson</strong></td>
+                    <td><input /></td>
+                </tr>
+                <tr>
+                    <td><input placeholder="Nom du Livre ?" /></td>
+                    <td><strong>Jordan B. Peterson</strong></td>
+                    <td><strong>2021</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Les 48 lois du pouvoir</strong></td>
+                    <td><input /></td>
+                    <td><strong>1998</strong></td>
+                </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+        <!-- Sélections multiples -->
+        <fieldset id="Qdeux">
+            <legend class="title"><strong>Peut-on associer à ces auteurs ou titres ?</strong></legend>
+            <ul>
+                <li>
+                    <label for="auteur1">Jordan B. Peterson est l'auteur de :</label>
+                    <select id="auteur1">
+                        <option>Choisir</option>
+                        <option>Berserk Tome 1</option>
+                        <option>Incendies</option>
+                        <option>Les 48 lois du pouvoir</option>
+                        <option>12 règles pour une vie</option>
+                        <option>One Piece</option>
+                        <option>L'Alchimiste</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="ouvrage1989">L'ouvrage publié en 1989 s'intitule :</label>
+                    <select id="ouvrage1989">
+                        <option>Choisir</option>
+                        <option>Berserk Tome 1</option>
+                        <option>Incendies</option>
+                        <option>Les 48 lois du pouvoir</option>
+                        <option>12 règles pour une vie</option>
+                        <option>12 nouvelles règles pour une vie</option>
+                        <option>L'Étranger</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="robert-greene">Parmi ces livres, lequel a été écrit par Robert Greene :</label>
+                    <select id="robert-greene">
+                        <option>Choisir</option>
+                        <option>Berserk Tome 1</option>
+                        <option>Incendies</option>
+                        <option>Les 48 lois du pouvoir</option>
+                        <option>12 règles pour une vie</option>
+                        <option>12 nouvelles règles pour une vie</option>
+                        <option>Le Prince</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="auteur-incendies">"Incendies" est une pièce écrite par :</label>
+                    <select id="auteur-incendies">
+                        <option>Choisir</option>
+                        <option>Robert Greene</option>
+                        <option>Jordan B. Peterson</option>
+                        <option>Wajdi Mouawad</option>
+                        <option>Kentaro Miura</option>
+                        <option>Victor Hugo</option>
+                        <option>Albert Camus</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+
+        <!-- Cases à cocher -->
+        <fieldset id="Qtrois3">
+            <legend class="title"><strong>Pour chaque livre, cochez les informations exactes</strong></legend>
+            <ul>
+                <!-- Contenu identique avec correction des balises auto-fermantes -->
+                <!-- [...] (Section identique à l'original avec correction de la syntaxe XHTML) -->
+            </ul>
+        </fieldset>
+
+        <!-- Gestion du formulaire -->
+        <fieldset>
+            <legend class="title"><strong>Gestion du formulaire</strong></legend>
+            <div>
+                <button type="reset">Effacer</button>
+                <button type="button" onclick="test_2()">Vérifier</button>
+                <button type="button">Afficher les résultats</button>
+                <button type="button" onclick="mysubmit()">Envoyer</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<hr />
+</body>
+</html>

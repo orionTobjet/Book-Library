@@ -1,0 +1,17 @@
+<!ENTITY %state " Lu | Plu | encours " >
+<!ELEMENT Library (Book+) >
+
+<!ELEMENT Book  (informations, commentaire?, note?)>
+<!ATTLIST Book %state #REQUIRED >
+
+
+<!ELEMENT informations  ( Title , Author , Category , Publisher , Publishdate , page_length )>
+<!ELEMENT commentaire (#PCDATA)>
+<!ELEMENT note (#PCDATA) >
+
+<!ELEMENT  Title (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT  Category (#PCDATA)>
+<!ELEMENT Publisher  (#PCDATA)>
+<!ELEMENT Publishdate (#PCDATA)>
+<!ELEMENT page_length (#PCDATA)>

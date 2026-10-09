@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bibliotheque SYSTEM "bibliotheque.dtd">
+
+
+<Library>
+    <Book state="Lu">
+        <informations>
+            <Titre> HHhH </Titre>
+            <Author> Laurant Binet </Author>
+            <Category> Roman </Category>
+            <Publisher> Grasset </Publisher>
+            <Publishdate> 2010 </Publishdate>
+            <page_length> 440 </page_length>
+        </informations>
+        <commentaire>  Roman sur la 2nd guerre mondial et l'oppération anthropoide à prague contre Reinhard Heydrich  </commentaire>
+        <note> 8 </note>
+    </Book>
+</Library>
